@@ -13,20 +13,20 @@
 
     $teams = [
         [
-            $team_c => "Lugagnano",
-            $punti_c => "50",
-            $team_o => "Bussolengo",
-            $punti_o => "40"
+            "team_c" => "Lugagnano",
+            "punti_c" => "50",
+            "team_o" => "Bussolengo",
+            "punti_o" => "40"
         ],
         [
-            $team_c => "Caselle",
-            $punti_c => "50",
-            $team_o => "Sona",
-            $punti_o => "30"
+            "team_c" => "Caselle",
+            "punti_c" => "50",
+            "team_o" => "Sona",
+            "punti_o" => "30"
         ],
     ];
 
-    for ($i = 0; $i < count($teams); $i++) {
+    foreach ($teams as $key => $team) {
         echo $teams[i];
     }
    
@@ -44,7 +44,7 @@
 <body>
     
         <h1>Snack 1 - girone</h1>
-        <p><?php echo $team_c ?> - <?php echo $team_o ?> | <?php echo $punti_c ?>-<?php echo $punti_o ?></p> 
+        <p><?php echo $team["team_c"] ?> - <?php echo $team["team_o"] ?> | <?php echo $team["punti_c"] ?>-<?php echo $team["punti_o"] ?></p> 
 
 
 </body>
