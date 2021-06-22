@@ -25,11 +25,6 @@
             "punti_o" => "30"
         ],
     ];
-
-    foreach ($teams as $key => $team) {
-        echo $teams[i];
-        
-    }
    
 
 ?>
@@ -45,8 +40,15 @@
 <body>
     
         <h1>Snack 1 - girone</h1>
-        <p><?php echo $team["team_c"] ?> - <?php echo $team["team_o"] ?> | <?php echo $team["punti_c"] ?>-<?php echo $team["punti_o"] ?></p> 
-
+        
+        <?php foreach ($teams as $key => $team) { ?>
+            <p>
+                <?php echo $team["team_c"] ?> - 
+                <?php echo $team["team_o"] ?> | 
+                <?php echo $team["punti_c"] ?> -
+                <?php echo $team["punti_o"] ?>
+            </p>
+        <?php } ?>
 
 </body>
 </html>
