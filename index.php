@@ -24,7 +24,7 @@
             $team_o => "Sona",
             $punti_o => "30"
         ],
-    ]
+    ];
 
     for ($i = 0; $i < count($teams); $i++) {
         echo $teams[i];
