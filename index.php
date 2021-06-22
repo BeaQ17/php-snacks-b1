@@ -28,6 +28,7 @@
 
     foreach ($teams as $key => $team) {
         echo $teams[i];
+        
     }
    
 
