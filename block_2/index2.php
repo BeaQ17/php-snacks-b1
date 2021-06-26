@@ -1,7 +1,7 @@
 <?php
 
 
-/*
+/* 1
 Partendo da questo array: https://www.codepile.net/pile/Po60bjgQ
 Ad ogni refresh della pagina visualizzare una pubblicità a schermo, tenendo conto che possono essere sorteggiate solo quelle is_active true.
 */
@@ -35,7 +35,29 @@ $ads = [
 
 ];
 
+/* 2
+Creiamo due pagine php. 
+La prima farà una chiamata GET alla seconda attraverso un form. 
+Il form avrà un input di testo in cui inserire il nome di un invitato. 
+Inseriamo nell’altro file una lista di invitati. 
+Se la nostra query è contenuta nella lista degli invitati stampare ok, altrimenti ko.
+ */
+
+
+
+
+
+
+
+
 ?>
+
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,17 +67,20 @@ $ads = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blocco 2</title>
 
-    
+    <h1>1</h1>
     <?php foreach ($ads as $key => $ad) { ?>
     <?php
             if("is_active" == true){
-                echo $ad["image_path"].$ad["link"];
                 var_dump($ad);
             }
     ?>
     <?php
     }
     ?>
+
+    <hr>
+    <h1>2</h1>
+    <form action="" method="get"></form>
 
 </head>
 <body>
